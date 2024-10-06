@@ -169,21 +169,13 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full mx-auto p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full mx-auto p-2">
         {filteredProjects.map((project) => (
           <div key={project.name} className="border p-4 rounded-lg">
             <h2 className="text-xl font-bold">{project.name}</h2>
             <p className="text-sm text-gray-600">{project.description}</p>
-            <div className="mt-2">
-              <Link
-                href={project.url}
-                className="text-black underline flex items-center"
-              >
-                Visit Project{" "}
-                <ArrowUpRight strokeWidth={2.5} width={23} height={25} />
-              </Link>
-            </div>
-            <div className="mt-2 flex flex-wrap gap-2">
+
+            <div className="mt-3 flex flex-wrap gap-2">
               {project.languages.map((language) => (
                 <span
                   key={language}
@@ -192,6 +184,16 @@ const Projects = () => {
                   {language}
                 </span>
               ))}
+            </div>
+
+            <div className="mt-3">
+              <Link
+                href={project.url}
+                className="text-black underline flex items-center"
+              >
+                Visit Project{" "}
+                <ArrowUpRight strokeWidth={1.5} width={20} height={20} />
+              </Link>
             </div>
           </div>
         ))}
