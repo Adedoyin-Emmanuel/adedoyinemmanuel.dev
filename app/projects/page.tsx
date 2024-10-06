@@ -4,9 +4,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ArrowUpRight, Tag } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
-import { describe } from "node:test";
-import { table } from "console";
-import { url } from "inspector";
+
 
 const playFairDisplay = Playfair_Display({
   weight: "500",
