@@ -84,7 +84,7 @@ const Navbar = () => {
       </section>
 
       <section className="md:hidden">
-        <Drawer.Root direction="top">
+        <Drawer.Root direction="left">
           <section className="w-full flex items-center justify-between p-1 ">
             <Drawer.Trigger asChild>
               <div aria-expanded="false" role="button">
@@ -109,7 +109,7 @@ const Navbar = () => {
 
           <Drawer.Portal>
             <Drawer.Overlay className="fixed inset-0 z-[100] bg-black/80" />
-            <Drawer.Content className="bg-white h-full w-full fixed bottom-0 z-[1000] outline-none p-2 overflow-scroll">
+            <Drawer.Content className="bg-white h-full w-3/4 fixed bottom-0 z-[1000] outline-none p-2 overflow-scroll">
               <Drawer.Close className="w-full flex items-end justify-end p-2">
                 <X
                   className="text-red-500 m-0 p-0"
