@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/app/components/navbar";
 
 const gtAmericaRegular = localFont({
   src: "./fonts/GT-America-Regular.otf",
@@ -18,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={gtAmericaRegular.className}>{children}</body>
+      <body className={gtAmericaRegular.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
