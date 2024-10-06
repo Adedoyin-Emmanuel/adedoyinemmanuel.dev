@@ -1,19 +1,30 @@
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { ArrowUpRight } from "lucide-react";
 
-"use client"
-import React from "react";
-
-interface LinkProps {
-    
+interface ColoredLinkProps {
+  className?: string;
+  href: string;
+  children: React.ReactNode;
 }
 
-const Link = ()=> {
+const ColoredLink = ({
+  className,
+  href,
+  children,
+  ...others
+}: ColoredLinkProps) => {
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      className={cn("text-blue-500 underline flex items-end", className)}
+      {...others}
+    >
+      {children}
+      <ArrowUpRight strokeWidth={2.5} className="h-5 w-5" />
+    </Link>
+  );
+};
 
-    return (
-        <div>
-            <h1>Link works!</h1>
-        </div>
-    );  
-}
-
-export default Link;
-    
+export default ColoredLink;

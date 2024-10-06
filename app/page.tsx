@@ -1,6 +1,6 @@
 import { Playfair_Display } from "next/font/google";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import ColoredLink from "@/app/components/link";
 
 const playFairDisplay = Playfair_Display({
   weight: "500",
@@ -27,8 +27,21 @@ const Home = () => {
       <div className="lg:text-[20px] text-[15px]">
         <p>
           I build Scalable Backend Systems, Engaging User Interfaces,
-          Intelligent Bots & Web Scrapers for Automation. Creator of
-          Methane-Cli, Fotograf, Telebot, SquadJsSdk
+          Intelligent Bots & Web Scrapers for Automation. Creator of{" "}
+          <span className="flex items-center gap-x-3 flex-wrap ">
+            <ColoredLink href="https://github.com/adedoyin-emmanuel/methane-cli">
+              Methane-Cli
+            </ColoredLink>
+            <ColoredLink href="https://fotograph.vercel.app">
+              Fotograph
+            </ColoredLink>
+            <ColoredLink href="https://github.com/adedoyin-emmanuel/telebot">
+              Telebot
+            </ColoredLink>
+            <ColoredLink href="https://github.com/adedoyin-emmanuel/squad-js-sdk">
+              Squad-Js-SDK
+            </ColoredLink>
+          </span>
         </p>
 
         <br />
@@ -39,7 +52,7 @@ const Home = () => {
         </p>
 
         <br />
-        <p>I ship seamless experiences with Godspeed.</p>
+        <p>You can do great things from a small place.</p>
       </div>
     </div>
   );
