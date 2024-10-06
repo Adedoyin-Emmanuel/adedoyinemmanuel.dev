@@ -140,7 +140,7 @@ const Projects = () => {
 
       <div className="mx-auto flex items-center justify-center md:w-[600px] mb-4">
         <span className="text-gray-600 mx-1 my-10">
-          "Behind every great solution is a coder who never gave up on a
+          "Behind every great solution is a developer who never gave up on a
           challenging problem." —{" "}
           <Link href={"/projects"} className="underline inline text-black">
             Adedoyin Emmanuel
@@ -169,7 +169,7 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full mx-auto p-4">
         {filteredProjects.map((project) => (
           <div key={project.name} className="border p-4 rounded-lg">
             <h2 className="text-xl font-bold">{project.name}</h2>

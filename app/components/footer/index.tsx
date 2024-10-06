@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
       <h1 className="text-2xl font-bold">Contact Me.</h1>
       <p className="flex gap-1 my-4 flex-wrap">
         <span className="text-gray-500">Reach out to me</span>{" "}
