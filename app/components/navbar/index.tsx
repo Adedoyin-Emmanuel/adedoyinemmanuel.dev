@@ -50,12 +50,12 @@ const Navbar = () => {
           Projects
         </Link>
         <Link
-          href="/blog"
+          href="/hall-of-fame"
           className={`${
-            isActive("/blog") ? "text-black font-bold" : "text-gray-500"
+            isActive("/hall-of-fame") ? "text-black font-bold" : "text-gray-500"
           }`}
         >
-          Blog
+          Hall Of Fame
         </Link>
       </section>
 
