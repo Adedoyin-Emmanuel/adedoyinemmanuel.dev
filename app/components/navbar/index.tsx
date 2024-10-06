@@ -1,10 +1,17 @@
+"use client";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Twitter, Linkedin, Github } from "lucide-react";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
+  const isActive = (path: string) => pathname === path;
+
   return (
-    <div className="w-full">
-      <div className="flex items-center">
+    <div className="w-full flex items-center justify-evenly p-4">
+      <div className="flex items-center w-full">
         <Avatar className="cursor-pointer">
           <AvatarImage src="/emmysoft.svg" alt="@adedoyin-emmanuel" />
           <AvatarFallback>AE</AvatarFallback>
@@ -17,16 +24,61 @@ const Navbar = () => {
         </div>
       </div>
 
-      <section className="nav">
-        <Link href={"/"}>Home</Link>
-        <Link href={"/"}>About</Link>
-        <Link href={"/"}>Projects</Link>
-        <Link href={"/"}>Blog</Link>
-          </section>
-          
-          <section className="socials">
-              
-          </section>
+      <section className="w-full flex items-center justify-center gap-6">
+        <Link
+          href="/"
+          className={`${
+            isActive("/") ? "text-black font-bold" : "text-gray-500"
+          }`}
+        >
+          Home
+        </Link>
+        <Link
+          href="/about"
+          className={`${
+            isActive("/about") ? "text-black font-bold" : "text-gray-500"
+          }`}
+        >
+          About
+        </Link>
+        <Link
+          href="/projects"
+          className={`${
+            isActive("/projects") ? "text-black font-bold" : "text-gray-500"
+          }`}
+        >
+          Projects
+        </Link>
+        <Link
+          href="/blog"
+          className={`${
+            isActive("/blog") ? "text-black font-bold" : "text-gray-500"
+          }`}
+        >
+          Blog
+        </Link>
+      </section>
+
+      <section className="w-full flex items-center justify-end gap-4">
+        <Link href="https://twitter.com">
+          <Twitter
+            strokeWidth={1}
+            className="hover:text-gray-900 hover:scale-110 transition-transform duration-200 ease-in-out"
+          />
+        </Link>
+        <Link href="https://github.com">
+          <Github
+            strokeWidth={1}
+            className="hover:text-gray-900 hover:scale-110 transition-transform duration-200 ease-in-out"
+          />
+        </Link>
+        <Link href="https://linkedin.com">
+          <Linkedin
+            strokeWidth={1}
+            className="hover:text-gray-900 hover:scale-110 transition-transform duration-200 ease-in-out"
+          />
+        </Link>
+      </section>
     </div>
   );
 };

@@ -1,9 +1,8 @@
 const Home = () => {
   return (
     <div>
-      <h1 className="text-4xl">Hello World, This is my portfilo website</h1>
-
-      <p>Hello boy</p>
+      <h1>Projects works!</h1>
+      <p>Current pathname: /home</p>
     </div>
   );
 };
