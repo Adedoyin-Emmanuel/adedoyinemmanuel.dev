@@ -83,7 +83,7 @@ const Navbar = () => {
         </Link>
       </section>
 
-      <section className="md:hidden">
+      <section className="lg:hidden">
         <Drawer.Root direction="left">
           <section className="w-full flex items-center justify-between p-1 ">
             <Drawer.Trigger asChild>
