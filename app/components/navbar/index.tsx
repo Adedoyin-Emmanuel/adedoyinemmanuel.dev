@@ -2,7 +2,10 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Twitter, Linkedin, Github } from "lucide-react";
+import { Twitter, Linkedin, Github, X, ArrowUpRight } from "lucide-react";
+import { Drawer } from "vaul";
+import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -10,7 +13,7 @@ const Navbar = () => {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <div className="w-full flex items-center justify-evenly p-4">
+    <div className={cn("w-full flex items-center justify-evenly p-2 my-6")}>
       <div className="flex items-center w-full">
         <Avatar className="cursor-pointer">
           <AvatarImage src="/emmysoft.svg" alt="@adedoyin-emmanuel" />
@@ -78,6 +81,79 @@ const Navbar = () => {
             className="hover:text-gray-900 hover:scale-110 transition-transform duration-200 ease-in-out"
           />
         </Link>
+      </section>
+
+      <section className="md:hidden">
+        <Drawer.Root direction="top">
+          <section className="w-full flex items-center justify-between p-1 ">
+            <Drawer.Trigger asChild>
+              <div aria-expanded="false" role="button">
+                <svg
+                  className="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </div>
+            </Drawer.Trigger>
+          </section>
+
+          <Drawer.Portal>
+            <Drawer.Overlay className="fixed inset-0 z-[100] bg-black/80" />
+            <Drawer.Content className="bg-white h-full w-full fixed bottom-0 z-[1000] outline-none p-2 overflow-scroll">
+              <Drawer.Close className="w-full flex items-end justify-end p-2">
+                <X
+                  className="text-red-500 m-0 p-0"
+                  size={30}
+                  strokeWidth={1.2}
+                />
+              </Drawer.Close>
+              <ul className="flex flex-col gap-5 mx-4 mt-5 overflow-y-scroll">
+                <li className="hover:text-[#5A83ED] transition-colors ease-in-out underline block">
+                  <Link href={"/"}>Home </Link>
+                </li>
+                <li className="hover:text-[#5A83ED] transition-colors ease-in-out underline block">
+                  <Link href={"/movie/hollywood"}>About </Link>
+                </li>
+                <li className="hover:text-[#5A83ED] transition-colors ease-in-out underline block">
+                  <Link href={"/movie/bollywood"}>Projects </Link>
+                </li>
+                <li className="hover:text-[#5A83ED] transition-colors ease-in-out underline block">
+                  <Link href={"https://series.clipsave.ng/show/international"}>
+                    Hall Of Fame{" "}
+                  </Link>
+                </li>
+
+                <Separator className="mt-3" />
+
+                <li className="hover:text-[#5A83ED] transition-colors ease-in-out underline block">
+                  <Link href={"https://x.com/Emmysoft_Tm"}>Twitter </Link>
+                </li>
+
+                <li className="hover:text-[#5A83ED] transition-colors ease-in-out underline block">
+                  <Link href={"https://github.com/Adedoyin-Emmanuel"}>
+                    Github{" "}
+                  </Link>
+                </li>
+
+                <li className="hover:text-[#5A83ED] transition-colors ease-in-out underline block">
+                  <Link href={"https://linkedin.com/in/Adedoyin-Emmanuel"}>
+                    Linkedin{" "}
+                  </Link>
+                </li>
+              </ul>
+            </Drawer.Content>
+          </Drawer.Portal>
+        </Drawer.Root>
       </section>
     </div>
   );

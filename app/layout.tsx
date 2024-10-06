@@ -23,11 +23,11 @@ export default function RootLayout({
       <body
         className={cn(
           gtAmericaRegular.className,
-          "md:container md:mx-auto mx-3 "
+          "md:container md:mx-auto mx-1 "
         )}
       >
         <Navbar />
-        <div className="w-full mx-5">{children}</div>
+        <div className="w-full mx-3">{children}</div>
       </body>
     </html>
   );
