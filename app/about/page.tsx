@@ -12,7 +12,7 @@ const playFairDisplay = Playfair_Display({
 
 export const metadata = {
   title: "Adedoyin Emmanuel - Software Engineer",
-  description: "About Adedoyin Emmanuel Adeniyi - CS, Software Enginner",
+  description: "About Adedoyin Emmanuel Adeniyi - CS, Software Engineer",
 };
 
 const randomImage = () => {

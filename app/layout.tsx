@@ -24,7 +24,7 @@ export default function RootLayout({
       <body
         className={cn(
           gtAmericaRegular.className,
-          "md:container md:mx-auto mx-1 "
+          "md:container md:mx-auto mx-1 overflow-x-hidden"
         )}
       >
         <Navbar />
