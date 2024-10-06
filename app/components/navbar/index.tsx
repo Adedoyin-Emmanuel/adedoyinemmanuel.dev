@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <section className="w-full flex items-center justify-center gap-6">
+      <section className="w-full hidden lg:flex items-center justify-center gap-6 ">
         <Link
           href="/"
           className={`${
@@ -59,7 +59,7 @@ const Navbar = () => {
         </Link>
       </section>
 
-      <section className="w-full flex items-center justify-end gap-4">
+      <section className="w-full hidden lg:flex items-center justify-end gap-4">
         <Link href="https://twitter.com">
           <Twitter
             strokeWidth={1}
