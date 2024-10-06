@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
 import { cn } from "@/lib/utils";
 
 const gtAmericaRegular = localFont({
@@ -27,7 +28,14 @@ export default function RootLayout({
         )}
       >
         <Navbar />
-        <div className="w-full mx-3">{children}</div>
+        <div className="w-full mx-3">
+          {children}
+
+          <br />
+          <br />
+          <br />
+          <Footer />
+        </div>
       </body>
     </html>
   );
