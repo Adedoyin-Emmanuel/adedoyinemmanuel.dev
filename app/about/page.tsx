@@ -59,13 +59,13 @@ const About = () => {
 
           <div className="my-5">
             <p>
-              I am a Software Engineer with over 4 years of experience. I'm an
-              Alumni at{" "}
+              I am a Software Engineer with over 4 years of experience and an
+              alumnus of the{" "}
               <Link
                 href="https://alxafrica.com"
                 className="underline text-blue-500"
               >
-                ALX Software Engineer Program
+                ALX Software Engineering Program
               </Link>{" "}
               , currently pursuring a Bachelors degree in Computer Science with
               a focus on Backend systems and Cloud infastructure.
@@ -89,11 +89,12 @@ const About = () => {
             <br />
 
             <p>
-              I love open source thus I make most of my side projects open
-              source with the hope people would be able to learn and use the
-              things I build. I've built serveral libraries, SDKs, CLI tools &
-              BOTs. In web-frameworks, payment gateways, automation and bot
-              development. All of my projects are on my Github.{" "}
+              I am passionate about open source which is I make most of my side
+              projects publicly available. My goal is to help others learn from
+              and use the tools I create. I've built serveral libraries, SDKs,
+              CLI tools & BOTs, spanning web-frameworks, payment gateways,
+              automation and bot development. You can find all my projects on
+              GitHub.{" "}
               <Link
                 href="https://alxafrica.com"
                 className="underline text-blue-500"
