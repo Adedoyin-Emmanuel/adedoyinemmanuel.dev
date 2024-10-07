@@ -6,16 +6,12 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import gsap from "gsap";
+import Seo from "@/app/components/Seo";
 
 const playFairDisplay = Playfair_Display({
   weight: "500",
   subsets: ["latin"],
 });
-
-// export const metadata = {
-//   title: "Adedoyin Emmanuel - Software Engineer",
-//   description: "About Adedoyin Emmanuel Adeniyi - CS, Software Engineer",
-// };
 
 const randomImage = () => {
   const images = ["/emma-1.jpeg", "/emma-2.jpg", "/emma-3.jpg"];
@@ -34,6 +30,10 @@ const About = () => {
 
   return (
     <div className="my-4 content-section">
+      <Seo
+        title="About Me"
+        description="About Adedoyin Emmanuel Adeniyi - CS, Software Engineer"
+      />
       <br />
       <br />
       <h1

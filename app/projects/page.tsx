@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import gsap from "gsap";
+import Seo from "@/app/components/Seo";
 
 const playFairDisplay = Playfair_Display({
   weight: "500",
@@ -138,6 +139,7 @@ const Projects = () => {
 
   return (
     <div className="my-4 content-section">
+      <Seo title="My Projects" description="Projects I've built overtime" />
       <h1
         className={cn(
           playFairDisplay.className,

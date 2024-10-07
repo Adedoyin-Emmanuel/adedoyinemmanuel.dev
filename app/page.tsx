@@ -4,16 +4,12 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import ColoredLink from "@/app/components/link";
 import gsap from "gsap";
+import Seo from "@/app/components/Seo";
 
 const playFairDisplay = Playfair_Display({
   weight: "500",
   subsets: ["latin"],
 });
-
-// export const metadata = {
-//   title: "Home",
-//   description: "Engineering Seamless Experiences for the Digital Age.",
-// };
 
 const Home = () => {
   React.useEffect(() => {
@@ -26,6 +22,10 @@ const Home = () => {
 
   return (
     <div className="my-4">
+      <Seo
+        title="Home"
+        description="ngineering Seamless Experiences for the Digital Age"
+      />
       <br />
       <br />
 

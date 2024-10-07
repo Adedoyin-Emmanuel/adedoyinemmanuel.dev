@@ -6,16 +6,12 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import gsap from "gsap";
+import Seo from "@/app/components/Seo";
 
 const playFairDisplay = Playfair_Display({
   weight: "500",
   subsets: ["latin"],
 });
-
-// export const metadata = {
-//   title: "Adedoyin Emmanuel - Software Engineer",
-//   description: "Hall Of Fame Adedoyin Emmanuel Adeniyi - CS, Software Engineer",
-// };
 
 const HallOfFame = () => {
   React.useEffect(() => {
@@ -28,6 +24,10 @@ const HallOfFame = () => {
 
   return (
     <div className="my-8 content-section">
+      <Seo
+        title="Hall Of Fame"
+        description="Hall Of Fame Adedoyin Emmanuel Adeniyi - CS, Software Engineer"
+      />
       <h1
         className={cn(
           playFairDisplay.className,
