@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="flex items-center w-full">
           <div className="">
             <img
-              src="/emmysoft.svg"
+              src="/emmysoft.png"
               alt="@Adedoyin-Emmanuel"
               className="rounded-full"
               width={40}
