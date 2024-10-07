@@ -272,7 +272,7 @@ const HallOfFame = () => {
             target="_blank"
           >
             {" "}
-            (I Built My V2 Portfolio in less than 9hrs)
+            (I Built My V2 Portfolio in less than 12hrs)
             <Link
               target="_blank"
               href="https://wakatime.com/badge/github/Adedoyin-Emmanuel/adedoyinemmanuel.dev"
