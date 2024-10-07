@@ -29,7 +29,6 @@ const Home = () => {
         description="Engineering Seamless Experiences for the Digital Age"
       />
       <br />
-      <br />
 
       <div className="content-section">
         <h1

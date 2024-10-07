@@ -29,7 +29,6 @@ const About = () => {
         description="About Adedoyin Emmanuel Adeniyi - CS, Software Engineer"
       />
       <br />
-      <br />
       <h1
         className={cn(
           playFairDisplay.className,
