@@ -14,18 +14,20 @@ const Navbar = () => {
 
   return (
     <div className={cn("w-full flex items-center justify-evenly p-2 my-6")}>
-      <div className="flex items-center w-full">
-        <Avatar className="cursor-pointer">
-          <AvatarImage src="/emmysoft.svg" alt="@adedoyin-emmanuel" />
-          <AvatarFallback>AE</AvatarFallback>
-        </Avatar>
-        <div className="mx-2">
-          <h3 className="font-bold text-[0.89rem]">Adedoyin Emmanuel</h3>
-          <p className="text-[0.74rem] text-[#8e8e8e] py-0 md-1">
-            Software Engineer
-          </p>
+      <Link href={"/"} className="w-full">
+        <div className="flex items-center w-full">
+          <Avatar className="cursor-pointer">
+            <AvatarImage src="/emmysoft.svg" alt="@adedoyin-emmanuel" />
+            <AvatarFallback>AE</AvatarFallback>
+          </Avatar>
+          <div className="mx-2">
+            <h3 className="font-bold text-[0.89rem]">Adedoyin Emmanuel</h3>
+            <p className="text-[0.74rem] text-[#8e8e8e] py-0 md-1">
+              Software Engineer
+            </p>
+          </div>
         </div>
-      </div>
+      </Link>
 
       <section className="w-full hidden lg:flex items-center justify-center gap-6 ">
         <Link
