@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
 import { cn } from "@/lib/utils";
+import {GoogleAnalytics } from "@next/third-parties/google";
 
 const gtAmericaRegular = localFont({
   src: "./fonts/GT-America-Regular.otf",
@@ -27,6 +28,7 @@ export default function RootLayout({
           "md:container md:mx-auto overflow-x-hidden"
         )}
       >
+        <GoogleAnalytics gaId="G-WTPMMSFEEP" />
         <Navbar />
         <div className="w-full p-3">
           {children}
