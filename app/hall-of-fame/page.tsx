@@ -1,23 +1,33 @@
+"use client";
 import React from "react";
 import { Playfair_Display } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import gsap from "gsap";
 
 const playFairDisplay = Playfair_Display({
   weight: "500",
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Adedoyin Emmanuel - Software Engineer",
-  description: "Hall Of Fame Adedoyin Emmanuel Adeniyi - CS, Software Engineer",
-};
+// export const metadata = {
+//   title: "Adedoyin Emmanuel - Software Engineer",
+//   description: "Hall Of Fame Adedoyin Emmanuel Adeniyi - CS, Software Engineer",
+// };
 
 const HallOfFame = () => {
+  React.useEffect(() => {
+    gsap.fromTo(
+      ".content-section",
+      { opacity: 0, y: 100 },
+      { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+    );
+  }, []);
+
   return (
-    <div className="my-8">
+    <div className="my-8 content-section">
       <h1
         className={cn(
           playFairDisplay.className,

@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { Playfair_Display } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import gsap from "gsap";
 
 const playFairDisplay = Playfair_Display({
   weight: "500",
@@ -12,8 +13,8 @@ const playFairDisplay = Playfair_Display({
 });
 
 const Projects = () => {
-  const [selectedTag, setSelectedTag] = useState<string | null>("All");
-  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedTag, setSelectedTag] = React.useState<string | null>("All");
+  const [searchQuery, setSearchQuery] = React.useState("");
 
   const projects = [
     {
@@ -118,6 +119,14 @@ const Projects = () => {
     ...Array.from(new Set(projects.map((project) => project.tag))),
   ];
 
+  React.useEffect(() => {
+    gsap.fromTo(
+      ".content-section",
+      { opacity: 0, y: 100 },
+      { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+    );
+  }, []);
+
   const filteredProjects = projects.filter((project) => {
     const matchesTag = selectedTag === "All" || project.tag === selectedTag;
     const matchesSearch = searchQuery
@@ -128,7 +137,7 @@ const Projects = () => {
   });
 
   return (
-    <div className="my-4">
+    <div className="my-4 content-section">
       <h1
         className={cn(
           playFairDisplay.className,

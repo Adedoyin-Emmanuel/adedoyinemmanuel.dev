@@ -1,19 +1,21 @@
+"use client";
 import React from "react";
 import { Playfair_Display } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import gsap from "gsap";
 
 const playFairDisplay = Playfair_Display({
   weight: "500",
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Adedoyin Emmanuel - Software Engineer",
-  description: "About Adedoyin Emmanuel Adeniyi - CS, Software Engineer",
-};
+// export const metadata = {
+//   title: "Adedoyin Emmanuel - Software Engineer",
+//   description: "About Adedoyin Emmanuel Adeniyi - CS, Software Engineer",
+// };
 
 const randomImage = () => {
   const images = ["/emma-1.jpeg", "/emma-2.jpg", "/emma-3.jpg"];
@@ -22,8 +24,16 @@ const randomImage = () => {
 };
 
 const About = () => {
+  React.useEffect(() => {
+    gsap.fromTo(
+      ".content-section",
+      { opacity: 0, y: 100 },
+      { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+    );
+  }, []);
+
   return (
-    <div className="my-4">
+    <div className="my-4 content-section">
       <br />
       <br />
       <h1
@@ -48,16 +58,16 @@ const About = () => {
       </div>
 
       <div className="flex items-center justify-center my-4">
-        <div className="lg:flex items-center justify-center lg:gap-6 lg:w-[900px]">
+        <div className="lg:flex items-start justify-center lg:gap-6 lg:w-[900px] my-5">
           <img
             src={randomImage()}
             alt="Adedoyin Emmanuel Adeniyi"
-            width={380}
+            width={400}
             height={600}
             className="rounded-lg mx-auto"
           />
 
-          <div className="my-5">
+          <div className="">
             <p>
               I am a Software Engineer with over 4 years of experience and an
               alumnus of the{" "}
