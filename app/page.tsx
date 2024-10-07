@@ -24,7 +24,7 @@ const Home = () => {
     <div className="my-4">
       <Seo
         title="Home"
-        description="ngineering Seamless Experiences for the Digital Age"
+        description="Engineering Seamless Experiences for the Digital Age"
       />
       <br />
       <br />
