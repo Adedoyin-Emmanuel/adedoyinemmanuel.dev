@@ -58,7 +58,7 @@ const Home = () => {
 
         <br />
 
-        <Link href={"/projects"}>
+        <Link href={"/Adedoyin-Emmanuel-Resume.pdf"} target="_blank">
           <button className="rounded-[30px] my-4 border hover:bg-black transition-all duration-400 ease-in hover:text-white border-black p-2 w-40 flex items-center justify-center">
             Resume <ArrowUpRight strokeWidth={1.5} />
           </button>
