@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import gsap from "gsap";
-import Seo from "@/app/components/Seo";
+import Seo from "@/app/components/seo";
 
 const playFairDisplay = Playfair_Display({
   weight: "500",
@@ -124,7 +124,7 @@ const Projects = () => {
     gsap.fromTo(
       ".content-section",
       { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+      { opacity: 1, y: 0, duration: 2, ease: "power3.out" }
     );
   }, []);
 

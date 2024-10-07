@@ -4,7 +4,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import ColoredLink from "@/app/components/link";
 import gsap from "gsap";
-import Seo from "@/app/components/Seo";
+import Seo from "@/app/components/seo";
 
 const playFairDisplay = Playfair_Display({
   weight: "500",
