@@ -16,10 +16,15 @@ const Navbar = () => {
     <div className={cn("w-full flex items-center justify-evenly p-2 my-6")}>
       <Link href={"/"} className="w-full">
         <div className="flex items-center w-full">
-          <Avatar className="cursor-pointer">
-            <AvatarImage src="/emmysoft.svg" alt="@adedoyin-emmanuel" />
-            <AvatarFallback>AE</AvatarFallback>
-          </Avatar>
+          <div className="">
+            <img
+              src="/emmysoft.svg"
+              alt="@Adedoyin-Emmanuel"
+              className="rounded-full"
+              width={40}
+              height={40}
+            />
+          </div>
           <div className="mx-2">
             <h3 className="font-bold text-[0.89rem]">Adedoyin Emmanuel</h3>
             <p className="text-[0.74rem] text-[#8e8e8e] py-0 md-1">
