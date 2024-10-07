@@ -92,7 +92,7 @@ const About = () => {
             <br />
 
             <p>
-              I am passionate about open source which is I make most of my side
+              I am passionate about open source which is why I make most of my side
               projects publicly available. My goal is to help others learn from
               and use the tools I create. I've built serveral libraries, SDKs,
               CLI tools & BOTs, spanning web-frameworks, payment gateways,
