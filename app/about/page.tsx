@@ -64,10 +64,10 @@ const About = () => {
             alt="Adedoyin Emmanuel Adeniyi"
             width={400}
             height={600}
-            className="rounded-lg mx-auto"
+            className="rounded-lg mx-auto lg:my-0 my-4"
           />
 
-          <div className="">
+          <div className="lg:my-0 my-3">
             <p>
               I am a Software Engineer with over 4 years of experience and an
               alumnus of the{" "}

@@ -16,7 +16,7 @@ const Home = () => {
     gsap.fromTo(
       ".content-section",
       { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+      { opacity: 1, y: 0, duration: 2, ease: "power3.out" }
     );
   }, []);
 
