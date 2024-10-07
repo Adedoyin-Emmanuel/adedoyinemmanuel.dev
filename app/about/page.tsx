@@ -68,7 +68,7 @@ const About = () => {
                 ALX Software Engineering Program
               </Link>{" "}
               , currently pursuring a Bachelors degree in Computer Science with
-              a focus on Backend systems and Cloud infastructure.
+              a focus on Backend systems and Cloud infrastructure.
             </p>
 
             <Separator className="my-5" />
