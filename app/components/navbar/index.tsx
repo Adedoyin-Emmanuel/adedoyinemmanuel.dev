@@ -124,15 +124,13 @@ const Navbar = () => {
                   <Link href={"/"}>Home </Link>
                 </li>
                 <li className="hover:text-[#5A83ED] transition-colors ease-in-out underline block">
-                  <Link href={"/movie/hollywood"}>About </Link>
+                  <Link href={"/about"}>About </Link>
                 </li>
                 <li className="hover:text-[#5A83ED] transition-colors ease-in-out underline block">
-                  <Link href={"/movie/bollywood"}>Projects </Link>
+                  <Link href={"/projects"}>Projects </Link>
                 </li>
                 <li className="hover:text-[#5A83ED] transition-colors ease-in-out underline block">
-                  <Link href={"https://series.clipsave.ng/show/international"}>
-                    Hall Of Fame{" "}
-                  </Link>
+                  <Link href={"/hall-of-fame"}>Hall Of Fame </Link>
                 </li>
 
                 <Separator className="mt-3" />
