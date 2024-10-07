@@ -13,12 +13,6 @@ const playFairDisplay = Playfair_Display({
   subsets: ["latin"],
 });
 
-const randomImage = () => {
-  const images = ["/emma-1.jpeg", "/emma-2.jpg", "/emma-3.jpg"];
-
-  return images[Math.floor(Math.random() * images.length)];
-};
-
 const About = () => {
   React.useEffect(() => {
     gsap.fromTo(
@@ -60,7 +54,7 @@ const About = () => {
       <div className="flex items-center justify-center my-4">
         <div className="lg:flex items-start justify-center lg:gap-6 lg:w-[900px] my-5">
           <img
-            src={randomImage()}
+            src={"/emma-3.jpg"}
             alt="Adedoyin Emmanuel Adeniyi"
             width={400}
             height={600}
