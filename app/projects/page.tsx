@@ -19,6 +19,14 @@ const Projects = () => {
 
   const projects = [
     {
+      name: "Codesharp",
+      tag: "Extension",
+      description:
+        "Code Sharp is a VsCode extension tailored for .NET developers, designed to simplify the creation of C# files.",
+      languages: ["TypeScript", "C#", "JavaScript"],
+      url: "https://codesharp.adedoyin.dev",
+    },
+    {
       name: "Methane CLI",
       tag: "CLI",
       description:
