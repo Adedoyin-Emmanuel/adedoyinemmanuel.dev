@@ -56,6 +56,10 @@ const Home = () => {
               <ColoredLink href="https://github.com/adedoyin-emmanuel/squad-js-sdk">
                 Squad-Js-SDK
               </ColoredLink>
+
+              <ColoredLink href="https://codesharp.adedoyin.dev">
+                Codesharp
+              </ColoredLink>
             </span>
           </p>
 
