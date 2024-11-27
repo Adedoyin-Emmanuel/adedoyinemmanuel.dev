@@ -19,6 +19,14 @@ const Projects = () => {
 
   const projects = [
     {
+      name: "Holytab",
+      tag: "Extension",
+      description:
+        "Fresh, Bible-centered confession on every new tab. Stay inspired and rooted in faith throughout your day",
+      languages: ["TypeScript", "JavaScript", "Chrome Extension"],
+      url: "https://holytab.adedoyin.dev",
+    },
+    {
       name: "Codesharp",
       tag: "Extension",
       description:
