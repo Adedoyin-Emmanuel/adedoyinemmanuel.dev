@@ -60,6 +60,10 @@ const Home = () => {
               <ColoredLink href="https://codesharp.adedoyin.dev">
                 Codesharp
               </ColoredLink>
+
+              <ColoredLink href="https://holytab.adedoyin.dev">
+                HolyTab
+              </ColoredLink>
             </span>
           </p>
 
