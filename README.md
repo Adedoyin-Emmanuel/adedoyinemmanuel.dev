@@ -4,4 +4,4 @@
 
 <https://adedoyinemmanuel.dev>
 
-Send me a mail at <hi@adedoyinemmanuel.dev>
+Send me a mail at <hi@adedoyinemmanuel.dev> or <adedoyinemmanuel@my.uopeople.edu>
